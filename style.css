@@ -885,9 +885,19 @@ html {
 /* 📱 Mobile & Tablet Responsive Override (< 800px) */
 @media (max-width: 800px) {
   .page-layout {
+    display: flex;
     flex-direction: column;
   }
+  .main-content {
+    display: contents;
+    padding: 10px 12px 32px;
+  }
 
+  .main-header {
+    padding: 8px 10px;
+    order: -2;
+  }
+  
   .sidebar {
     width: 100%;
     max-width: 100%;
@@ -898,6 +908,15 @@ html {
     gap: 10px;
     border-right: none;
     border-bottom: 1px solid var(--ghostly-purple);
+    order: -1;
+  }
+
+  .hero {
+    order: 0;
+  }
+
+  .grid-container {
+    order: 1;
   }
 
   .sidebar-logo {
@@ -925,7 +944,10 @@ html {
   }
 
   .social {
-    gap: 12px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 16px;
   }
 
   /* Sort: full width but smaller */
@@ -945,14 +967,7 @@ html {
     display: none;
   }
 
-  .main-content {
-    padding: 10px 12px 32px;
-  }
-
-  .main-header {
-    padding: 8px 10px;
-  }
-
+  
   .ghost-parade {
     font-size: 1.4rem; /* fewer / smaller ghosts */
   }
@@ -969,6 +984,9 @@ html {
 
   .plant-card {
     flex: 0 0 220px;
+  }
+  .site-footer {
+    order: 2;
   }
 }
 
