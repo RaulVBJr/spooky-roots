@@ -927,8 +927,7 @@ html {
   }
    
   .monster-sprite {
-    transform: scale(0.5); 
-    margin: 12px auto;
+    display: none;
   }
 
   .nursery-hours {
