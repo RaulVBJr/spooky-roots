@@ -1,0 +1,1022 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nursery - Spooky Roots</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="monster.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-layout">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-logo">🧛‍♂️ Spooky Roots</div>
+        <nav class="sidebar-nav">
+          <a href="index.html">Home</a>
+          <a href="care.html">Codex</a>
+          <a href="waiver.html">Claim Your Cutting</a>
+          <a href="monsters.html" class="active">Nursery</a>
+        </nav>
+        <br />
+        <div class="social">
+          <a
+            href="https://www.instagram.com/"
+            aria-label="Instagram"
+            target="_blank"
+            >📸</a
+          >
+          <a href="https://x.com/" aria-label="Twitter" target="_blank">𝕏</a>
+          <a href="#" id="openEmailModal">
+            <span class="social-icon">✉️</span>
+          </a>
+        </div>
+        <!--SEARCH-->
+
+        <select id="monsterSortSelect" class="sig-input">
+          <option value="name-asc">Name A–Z</option>
+          <option value="name-desc">Name Z–A</option>
+        </select>
+
+        <!--MONSTER-->
+        <div class="monster-sprite"></div>
+
+        <div class="nursery-hours">
+          <h4>📜 Nursery Hours</h4>
+          <p>
+            Open from when the first twilight hits until the first rooster
+            crows.
+          </p>
+          <p>Always open under a full moon 🌕 or eclipse.</p>
+          <p class="closed-note">Closed when the spirits demand it.</p>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="main-header">
+          <div class="ghost-parade" id="ghostParade"></div>
+        </header>
+
+        <section class="hero">
+          <h1>The Specimen Registry</h1>
+          <p>A closer look at our genetic botanical anomalies.</p>
+        </section>
+
+        <!-- The Gallery Grid Container -->
+        <div id="plant-066" class="monster-detail-card">
+          <div class="image-container">
+            <img src="vampire-vine2.jpg" alt="Vampire vine" />
+            <div class="specimen-tag">ID: #066</div>
+          </div>
+          <div class="monster-info">
+            <h2>VAMPIRE VINE</h2>
+            <p class="scientific-name">
+              <em>Origin/Class: Parasitic-Sanguine / Strain ID: #066</em>
+            </p>
+
+            <p>
+              An aggressive, iron-spiked climber that does not photosynthesize;
+              instead, its razor-sharp tendrils sense the thermal radiation and
+              heartbeat of passing warm-blooded creatures. When it strikes, it
+              draws minimal moisture from the air rather than soil.
+            </p>
+
+            <h3>Care & Containment Directives:</h3>
+            <ul>
+              <li>
+                <strong>Placement:</strong> Keep firmly away from open doors,
+                stairwells, or anywhere family members frequently walk. It
+                treats open walking paths as an invitation to bridge the gap.
+              </li>
+              <li>
+                <strong>Feeding:</strong> Do not attempt hand-feeding. If you
+                notice the thorns turning a deeper crimson, wipe down nearby
+                window glass to remove stray static charges.
+              </li>
+              <li>
+                <strong>Rule:</strong> An aggressive climber that reacts
+                violently to movement. Keep it clear of open entryways.
+              </li>
+            </ul>
+
+            <p class="warning-text">
+              <strong>Warning:</strong> If a tendril begins tapping a rhythmic
+              pattern against the floorboards, it has locked onto a target in
+              the room below. Relocate immediately.
+            </p>
+          </div>
+        </div>
+
+        <!-- Monster Box 2 -->
+        <div id="plant-103" class="monster-detail-card">
+          <div class="image-container">
+            <img src="banshee-bonsai2.jpg" alt="Banshee-Bonsai" />
+            <div class="specimen-tag">ID: #103</div>
+          </div>
+          <div class="monster-info">
+            <h2>BANSHEE BONSAI</h2>
+            <p class="scientific-name">
+              <em>Origin/Class: Acoustic-Arboreal / Strain ID: #103</em>
+            </p>
+
+            <p>
+              A gnarled, ash-trunked specimen whose micro-leaf structures act as
+              biological tuning forks. When its moisture levels drop below
+              critical thresholds, it doesn't wilt—it begins emitting a
+              high-frequency acoustic wail that bypasses standard earplugs and
+              vibrates directly in the listener's dental work.
+            </p>
+
+            <h3>Care & Containment Directives:</h3>
+            <ul>
+              <li>
+                <strong>Placement:</strong> A thick glass cloche is a must,
+                emits an ultrasonic frequency even when under-watered.
+              </li>
+              <li>
+                <strong>Feeding:</strong> Water strictly every third night using
+                stagnant tap water. Never miss a schedule.
+              </li>
+              <li>
+                <strong>Rule:</strong> Always wear industrial sound-suppression
+                gear during maintenance.
+              </li>
+            </ul>
+
+            <p class="warning-text">
+              <strong>Warning:</strong> The wail is known to shatter untreated
+              glass within a five-foot radius and can temporarily disorient
+              household pets. If it starts crying in a minor key, your water
+              source has gone stale.
+            </p>
+          </div>
+        </div>
+
+        <!-- Monster Box 3 -->
+        <div id="plant-013" class="monster-detail-card">
+          <div class="image-container">
+            <img src="zombie-succulent2.jpg" alt="Zombie Succulent" />
+            <div class="specimen-tag">ID: #013</div>
+          </div>
+          <div class="monster-info">
+            <h2>ZOMBIE SUCCULENT</h2>
+            <p class="scientific-name">
+              <em>Origin/Class: Undead-Botanic / Strain ID: #013</em>
+            </p>
+
+            <p>
+              Biologically impossible, this rubbery green specimen defies every
+              known law of agronomy. It requires zero soil, zero water, and zero
+              sunlight to persist. Pathology reports suggest its cellular matrix
+              is locked in permanent post-mortem animation, refusing to decay or
+              rest.
+            </p>
+
+            <h3>Care & Containment Directives:</h3>
+            <ul>
+              <li>
+                <strong>Placement:</strong> Must be kept in a deep ceramic bowl
+                with high lip clearance.
+              </li>
+              <li>
+                <strong>Feeding:</strong> Place decomposed organic matter
+                (household food scraps, rotting produce, etc.) directly near its
+                root base. The specimen will absorb the decaying nutrients over
+                24–48 hours.
+              </li>
+              <li>
+                <strong>Rule:</strong> If left completely unattended for more
+                than forty-eight hours, its root stems sprout tiny, claw-like
+                appendages that allow it to slowly drag itself across flat
+                surfaces.
+              </li>
+            </ul>
+            <p class="warning-text">
+              <strong>Warning:</strong> Good luck with the smell. We recommend
+              keeping this specimen in a well-ventilated area—or in a room you
+              rarely inhabit.
+            </p>
+
+            <p class="warning-text">
+              <strong>Warning:</strong> Do not leave near windowsills left open
+              for ventilation. Several specimens have successfully "escaped"
+              onto suburban lawns, where they refuse to integrate back into
+              flowerbeds.
+            </p>
+          </div>
+        </div>
+
+        <!-- Monster Box 4 -->
+        <div id="plant-069" class="monster-detail-card">
+          <div class="image-container">
+            <img src="phantom-fern.jpg" alt="Phantom Fern" />
+            <div class="specimen-tag">ID: #069</div>
+          </div>
+          <div class="monster-info">
+            <h2>PHANTOM FERN</h2>
+            <p class="scientific-name">
+              <em>Origin/Class: Quantum-Cryptis / Strain ID: #069</em>
+            </p>
+
+            <p>
+              A delicate, feather-fronded mystery that thrives exclusively in
+              total, pitch-black darkness, where it emits a soft, ghostly
+              bioluminescence. However, its root structure exists partially out
+              of phase with our current dimension, resulting in frequent
+              localized spatial displacement.
+            </p>
+
+            <h3>Care & Containment Directives:</h3>
+            <ul>
+              <li>
+                <strong>Placement:</strong> Keep in windowless closets,
+                basements, or dark display cases. Exposure to direct sunlight
+                causes the fronds to turn transparent and smell faintly of
+                ozone.
+              </li>
+              <li>
+                <strong>Feeding:</strong> Self feeding, after it returns with a
+                light coating of dust.
+              </li>
+              <li>
+                <strong>Rule:</strong> Do not panic if the pot appears empty
+                during routine checks.
+              </li>
+            </ul>
+
+            <p class="warning-text">
+              <strong>Warning:</strong> Due to quantum shifting, this specimen
+              will routinely vanish from its container for 5 to 10 minutes at a
+              time, only to reappear with a light coating of dust from an
+              unknown room. Never touch the empty pot while it is phased out.
+            </p>
+          </div>
+        </div>
+
+        <!-- Monster Box 5 -->
+        <div id="plant-084" class="monster-detail-card">
+          <div class="image-container">
+            <img src="watchers-bulb.jpg" alt="Watcher Bulb" />
+            <div class="specimen-tag">ID: #084</div>
+          </div>
+          <div class="monster-info">
+            <h2>WATCHERS BULB</h2>
+            <p class="scientific-name">
+              <em>Origin/Class: Ocular-Flora / Strain ID: #084</em>
+            </p>
+
+            <p>
+              Distinguished by a fleshy, iridescent central node that behaves
+              remarkably like a cornea. The bulb remains motionless until a
+              living body enters its line of sight, at which point the central
+              lens contracts and silently rotates to maintain direct eye
+              contact.
+            </p>
+
+            <h3>Care & Containment Directives:</h3>
+            <ul>
+              <li>
+                <strong>Placement:</strong> Avoid staring into the central lens
+                for prolonged periods. Long-term exposure frequently causes a
+                sensation of being observed even after leaving the building.
+              </li>
+              <li>
+                <strong>Feeding:</strong> Thrives under dim, ambient lighting.
+                In complete pitch-black, its lens dilates to nearly three times
+                its normal size to seek out nearby thermal signatures.
+              </li>
+              <li>
+                <strong>Rule:</strong> The glossy central bud that slowly turns
+                to track human body heat across the room. Do not blink first.
+              </li>
+            </ul>
+
+            <p class="warning-text">
+              <strong>Warning:</strong> If the pupil-like structure rapidly
+              twitches or dilates while no one is moving, it has detected
+              something else in the room behind you.
+            </p>
+          </div>
+        </div>
+
+        <!-- Monster Box 6 -->
+        <div id="plant-404" class="monster-detail-card">
+          <div class="image-container">
+            <img src="frostbite-ivy.jpg" alt="Frostbite Ivy" />
+            <div class="specimen-tag">ID: #404</div>
+          </div>
+          <div class="monster-info">
+            <h2>FROSTBITE IVY</h2>
+            <p class="scientific-name">
+              <em>Origin/Class: Cryo-Botanical / Strain ID: #404</em>
+            </p>
+
+            <p>
+              A pale, crystalline creeper that actively draws thermal energy out
+              of its surroundings. The sharp, translucent frost dusting its
+              leaves never thaws—even when exposed to direct heat sources, which
+              only cause the plant to drop its local ambient temperature
+              further.
+            </p>
+
+            <h3>Care & Containment Directives:</h3>
+            <ul>
+              <li>
+                <strong>Placement:</strong> Drops the immediate surrounding air
+                temperature by approximately 5 to 10 degrees. Do not place near
+                delicate electronics or liquid containers prone to freezing.
+              </li>
+              <li>
+                <strong>Feeding:</strong> Thrives by sprinkling snow on it.
+              </li>
+              <li>
+                <strong>Rule:</strong> Always wear insulated leather gloves when
+                handling its stems. Skin contact for longer than three seconds
+                risks mild cold burns and temporary numbness.
+              </li>
+            </ul>
+
+            <p class="warning-text">
+              <strong>Warning:</strong> If the frost layer suddenly thickens
+              into dense white ice spikes, it is rapidly absorbing excess heat
+              from an unseen thermal surge nearby.
+            </p>
+          </div>
+        </div>
+
+        <!-- Monster Box 7 -->
+        <div id="plant-112" class="monster-detail-card">
+          <div class="image-container">
+            <img src="echoing-orchid.jpg" alt="Echoing-orchid" />
+            <div class="specimen-tag">ID: #112</div>
+          </div>
+          <div class="monster-info">
+            <h2>ECHOING ORCHID</h2>
+            <p class="scientific-name">
+              <em>Origin/Class: Acoustic-Resonant / Strain ID: #112</em>
+            </p>
+
+            <p>
+              Boasts velvety, pitch-black petals lined with microscopic
+              hair-like cilia that act as continuous audio recording membranes.
+              It stores ambient acoustics within its fluid-filled stem before
+              vibrating its petals to playback sounds with eerie, mechanical
+              clarity.
+            </p>
+
+            <h3>Care & Containment Directives:</h3>
+            <ul>
+              <li>
+                <strong>Placement:</strong> Position in a high-traffic room with
+                consistent ambient noise to prevent sensory dormancy. Plays back
+                room audio on a delayed loop—typically 3 hours after the
+                original noise occurred.
+              </li>
+              <li>
+                <strong>Feeding:</strong> Consumes any surrounding sound, though
+                its metabolic preference varies. Inspect petal size to gauge
+                acoustic sensitivity: specimens with larger petals require
+                minimal ambient noise to sustain themselves, while specimens
+                with smaller petals require significantly amplified volumes to
+                avoid starvation.
+              </li>
+              <li><strong>Rule:</strong> Do not place it near a graveyard.</li>
+            </ul>
+
+            <p class="warning-text">
+              <strong>Warning:</strong> If the orchid replays a voice speaking
+              sentences that no occupant in the home remembers saying, do not
+              answer it.
+            </p>
+          </div>
+        </div>
+
+        <!-- Monster Box 8 -->
+        <div id="plant-117" class="monster-detail-card">
+          <div class="image-container">
+            <img src="widows-weave.jpg" alt="Widows Weave" />
+            <div class="specimen-tag">ID: #117</div>
+          </div>
+          <div class="monster-info">
+            <h2>WIDOWS WEAVE</h2>
+            <p class="scientific-name">
+              <em>Origin/Class: Metalloid-Vitus / Strain ID: #117</em>
+            </p>
+
+            <p>
+              A slow-creeping vine that extrudes razor-thin, metallic silk
+              fibers from the undersides of its dark leaves. Under moonlight or
+              UV lighting, these silvery strands glimmer identically to
+              pristine, dew-covered arachnid webbing.
+            </p>
+
+            <h3>Care & Containment Directives:</h3>
+            <ul>
+              <li>
+                <strong>Placement:</strong> Keep clear of high-traffic walkways
+                or ceiling fans; the airborne threads can catch light fixtures
+                and create fine web canopies overnight.
+              </li>
+              <li>
+                <strong>Feeding:</strong> This specimen subsists entirely on
+                genuine pearls. Fake pearls are actively purged and pushed back
+                above the soil line. Notably, the plant displays dynamic
+                pigmentation shifting based on its diet. The ingestion of
+                standard white pearls induces a classic, high-gloss silver
+                nacre. Conversely, the introduction of black pearls triggers a
+                dramatic darken cycle, shifting the gradient toward deep violet
+                and charcoal tones.
+              </li>
+              <li>
+                <strong>Rule:</strong> High tensile strength makes standard
+                garden shears useless. Prune exclusively with tungsten
+                wire-cutters to avoid tearing the main vine.
+              </li>
+            </ul>
+
+            <p class="warning-text">
+              <strong>Warning:</strong> The silk strands are coated in a mild,
+              sticky neuro-adhesive. If entangled, do not pull aggressively—use
+              rubbing alcohol to dissolve the bond cleanly.
+            </p>
+            <p class="warning-text">
+              <strong>Warning:</strong> Opulent appetite.
+            </p>
+          </div>
+        </div>
+
+        <!-- Monster Box 9 -->
+        <div id="plant-001" class="monster-detail-card">
+          <div class="image-container">
+            <img
+              src="screaming-mandrake-root.jpg"
+              alt="Screaming Mandrake Root"
+            />
+            <div class="specimen-tag">ID: #001</div>
+          </div>
+          <div class="monster-info">
+            <h2>SCREAMING MANDRAKE ROOT</h2>
+            <p class="scientific-name">
+              <em>Origin/Class: Subterranean-Hominid / Strain ID: #001</em>
+            </p>
+
+            <p>
+              A primitive, fleshy tuber system whose dense root network grows
+              into a grotesque, humanoid silhouette complete with distinct
+              facial features. It maintains a constant, high-pressure vocal sac
+              underground; as long as dark soil exerts outward pressure on the
+              root, the vocal mechanism remains compressed and silent.
+            </p>
+
+            <h3>Care & Containment Directives:</h3>
+            <ul>
+              <li>
+                <strong>Placement:</strong> Soil must be tightly packed using
+                moist peat moss and lead-lined soil weights. Check soil density
+                weekly for loose pockets.
+              </li>
+              <li>
+                <strong>Feeding:</strong> Spoiled milk that was placed under a
+                full-moon light. And when you can, a fresh goat's milk out in a
+                silver chalice during a full lunar eclipse.
+              </li>
+              <li>
+                <strong>Rule:</strong> Ear protection (minimum NRR 33 rating) is
+                mandatory during repotting procedures.
+              </li>
+            </ul>
+
+            <p class="warning-text">
+              <strong>Warning:</strong> If extracted from its pot without
+              acoustic dampening, the resulting 130-decibel shriek can shatter
+              glass within a twelve-foot radius and induce immediate nausea in
+              human handlers.
+            </p>
+            <p class="warning-text">
+              <strong>Attention:</strong> Due to mainstream popularity, it has
+              been sold out. Please email us to join the waitlist for the next
+              batch.
+            </p>
+          </div>
+        </div>
+
+        <!-- Monster Box 10 -->
+        <div id="plant-777" class="monster-detail-card">
+          <div class="image-container">
+            <img src="corpse-root-claws.jpg" alt="Corpse-Root Claws" />
+            <div class="specimen-tag">ID: #777</div>
+          </div>
+          <div class="monster-info">
+            <h2>CORPSE ROOT CLAWS</h2>
+            <p class="scientific-name">
+              <em>Origin/Class: Mutated-Mycelial / Strain ID: #777</em>
+            </p>
+
+            <p>
+              A bio-engineered hybrid that weaponizes the wood-decaying
+              properties of Xylaria polymorpha ("Dead Man's Fingers"). The hard,
+              blackened stromata rupture through the surface mulch like a
+              decayed, skeletal hand. Equipped with a rudimentary tactile sensor
+              grid, the fruiting bodies actively flex and snap toward
+              surrounding objects.
+            </p>
+
+            <h3>Care & Containment Directives:</h3>
+            <ul>
+              <li>
+                <strong>Placement:</strong> Thrives on rotting hardwood chips
+                and damp peat moss. Keep away from wooden furniture, baseboards,
+                or low-hanging curtains.
+              </li>
+              <li>
+                <strong>Feeding:</strong> Water, but it's sensitive to
+                mineral-rich groundwater, especially if it's heavy with quartz
+                and/or calcite. It will cause petrification.
+              </li>
+              <li>
+                <strong>Rule:</strong> Maintains a strict six-inch reaction
+                zone. It will snatch and grip fabric, electrical cords, or stray
+                pet collars that drag across its container.
+              </li>
+            </ul>
+
+            <p class="warning-text">
+              <strong>Warning:</strong> While not venomous, its grip is
+              surprisingly strong and requires a mild saline solution applied
+              directly to the root wrist to force the "fingers" to release their
+              hold.
+            </p>
+
+            <p class="warning-text">
+              <strong>Warning:</strong> Unauthorized utilization for indoor pest
+              management is strictly prohibited. Instances of physical
+              mishandling have frequently resulted in specimen escape into
+              interior wall voids, creating severe extraction difficulties.
+            </p>
+          </div>
+        </div>
+
+        <!-- Monster Box 11 -->
+        <div id="plant-202" class="monster-detail-card">
+          <div class="image-container">
+            <img src="chime-choke-orchid2.png" alt="Chime-Choke Orchid" />
+            <div class="specimen-tag">ID: #202</div>
+          </div>
+          <div class="monster-info">
+            <h2>CHIME CHOKE ORCHID</h2>
+            <p class="scientific-name">
+              <em>Origin/Class: Resonance-Spore / Strain ID: #202</em>
+            </p>
+
+            <p>
+              Features a rigid, calcified spine lined with hollow, bell-shaped
+              seed pods. In absolute silence (0 dB), the pods vibrate subtly,
+              striking one another to emit a hypnotic, metallic chord. However,
+              sharp ambient sounds overload its central nervous stalk,
+              triggering a rapid defensive spore release.
+            </p>
+
+            <h3>Care & Containment Directives:</h3>
+            <ul>
+              <li>
+                <strong>Placement:</strong> Best placed in quiet libraries,
+                study rooms, or display cabinets far from speakers, doorbells,
+                or home entertainment units.
+              </li>
+              <li>
+                <strong>Feeding:</strong> Water, but only if it's been near a
+                speaker that was playing classical music first.
+              </li>
+              <li>
+                <strong>Rule:</strong> Keep a damp cloth nearby during routine
+                maintenance. If a sudden loud noise occurs, cover the flower
+                heads immediately to contain airborne drift.
+              </li>
+            </ul>
+
+            <p class="warning-text">
+              <strong>Warning:</strong> Inhaling the orchid's fine violet
+              defense spores causes mild temporal disorientation and causes all
+              surrounding speech to sound like ringing church bells for up to
+              two hours.
+            </p>
+          </div>
+        </div>
+
+        <!-- Monster Box 12 -->
+        <div id="plant-903" class="monster-detail-card">
+          <div class="image-container">
+            <img src="void-theme-white.jpg" alt="Void Tendril (Lunar)" />
+            <div class="specimen-tag">ID: #903</div>
+          </div>
+          <div class="monster-info">
+            <h2>THE VOID TENDRIL (LUNAR)</h2>
+            <p class="scientific-name">
+              <em
+                >Class: Abyssal-Cryptis / Origin: Sea of Tranquility
+                (Imported)</em
+              >
+            </p>
+
+            <p>
+              Recovered from a sealed vacuum canister following an unrecorded
+              orbital anomaly, the Lunar Void Tendril does not grow in soil—it
+              anchors itself in cold, dark corners and feeds on ambient body
+              heat.
+            </p>
+
+            <h3>Care & Containment Directives:</h3>
+            <ul>
+              <li>
+                <strong>Lighting:</strong> Absolute darkness preferred.
+                Artificial light causes the glowing orbs to dilate and hum at
+                frequencies audible only to household pets and restless spirits.
+              </li>
+              <li>
+                <strong>Feeding:</strong> Requires no physical watering.
+                Instead, it absorbs static electricity and moonlight.
+              </li>
+              <li>
+                <strong>The Mirror Rule:</strong> Never place within
+                line-of-sight of a vanity mirror. The recursive reflections
+                create an infinite loop that can slowly drain the color from the
+                room's wallpaper.
+              </li>
+            </ul>
+
+            <p class="warning-text">
+              <strong>Warning:</strong> If a guest stares directly into the
+              glowing beacons for longer than ten consecutive seconds and claims
+              to hear whispering, relocate the specimen immediately.
+            </p>
+          </div>
+        </div>
+
+        <!-- Monster Box 13 -->
+        <div id="plant-904" class="monster-detail-card">
+          <div class="image-container">
+            <img src="void-theme-purple.jpg" alt="Void Tendril (Violet)" />
+            <div class="specimen-tag">ID: #904</div>
+          </div>
+          <div class="monster-info">
+            <h2>THE VOID TENDRIL (VIOLET)</h2>
+            <p class="scientific-name">
+              <em
+                >Class: Abyssal-Cryptis / Origin: Sub-Basement 4 (Domestic
+                Strain)</em
+              >
+            </p>
+
+            <p>
+              Unlike its cold lunar sibling, the Violet variant radiates a warm,
+              pulsing ultraviolet glow that reacts directly to the sleep cycles
+              of anyone sleeping on the same floor. Its hum intensifies between
+              2:00 AM and 4:00 AM, matching the alpha-wave frequencies of human
+              dreaming.
+            </p>
+
+            <h3>Care & Containment Directives:</h3>
+            <ul>
+              <li>
+                <strong>Placement:</strong> Ideal for hallways, crawlspaces, or
+                guest rooms you'd prefer your visitors didn't linger in for too
+                long.
+              </li>
+              <li>
+                <strong>Feeding:</strong> Requires no physical watering.
+                Instead, it absorbs static electricity and the fleeting warmth
+                of passing shadows.
+              </li>
+              <li>
+                <strong>Pruning:</strong> Trim only with silver shears during a
+                waning moon. Never touch bare skin to the tendril tips while
+                they are humming.
+              </li>
+            </ul>
+
+            <p class="warning-text">
+              <strong>Warning:</strong> If the violet lures suddenly turn pitch
+              black and the hum stops entirely, lock the door to that room and
+              do not open it until sunrise.
+            </p>
+            <p class="warning-text">
+              <strong>Warning:</strong> Do not attempt to record the night choir
+              audio using a smartphone or digital recorder; the playback
+              consistently captures voices asking questions you haven't thought
+              of yet.
+            </p>
+          </div>
+        </div>
+
+        <!-- Monster Box 14 -->
+        <div id="plant-834" class="monster-detail-card">
+          <div class="image-container">
+            <img src="Celestial Lantern Plant.png" alt="Celestial Lantern" />
+            <div class="specimen-tag">ID: #834</div>
+          </div>
+          <div class="monster-info">
+            <h2>CELESTIAL (NULLBELL) LANTERN</h2>
+            <p class="scientific-name">
+              <em>Origin/Class: Cosmic-Anomalous / Strain ID: #834</em>
+            </p>
+
+            <p>
+              A delicate, otherworldly specimen featuring a thin charcoal-black
+              stem resembling polished obsidian glass. Its hanging, bell-shaped
+              pods appear to capture actual fragments of the night sky, complete
+              with drifting star clusters that move independently of real-world
+              astronomy. Its roots do not anchor deep into dirt, instead
+              hovering just above the substrate like suspended pools of dark
+              ink.
+            </p>
+
+            <h3>Care & Containment Directives:</h3>
+            <ul>
+              <li>
+                <strong>Placement:</strong> Handle with extreme care. When
+                jostled or disturbed, the lantern pods extinguish their violet
+                light one by one, generating localized pockets of absolute
+                darkness around the plant.
+              </li>
+              <li>
+                <strong>Feeding:</strong> Insects and loose objects entering the
+                shadow experience micro-teleportation, vanishing before
+                reappearing elsewhere in the room. Each transit visibly ages
+                organic matter; insects emerge with significantly shortened
+                lifespans.
+              </li>
+              <li>
+                <strong>Rule:</strong> This plant casts a dense, physical shadow
+                even in pitch-black darkness. During a lunar eclipse, that
+                shadow swells. If an eclipse begins, lock the room immediately.
+                Do not enter until it is over.
+              </li>
+            </ul>
+
+            <p class="warning-text">
+              <strong>Warning:</strong> Never reach your bare hand into a shadow
+              cast by the Nullbell Lantern while a pod is extinguished.
+              Localized coordinate displacement is unpredictable, and fingers
+              temporarily out of sync with reality can take up to an hour to
+              rematerialize.
+            </p>
+          </div>
+        </div>
+
+        <!-- Monster Box 15 -->
+        <div id="plant-888" class="monster-detail-card">
+          <div class="image-container">
+            <img
+              src="Celestial Whisperthorn Seedling.png"
+              alt="Celestial Whisperthorn Seedling"
+            />
+            <div class="specimen-tag">ID: #888</div>
+          </div>
+          <div class="monster-info">
+            <h2>CELESTIAL WHISPERTHORN SEEDLING</h2>
+            <p class="scientific-name">
+              <em>Origin/Class: Cosmic-Memetic / Strain ID: #888</em>
+            </p>
+
+            <p>
+              A compact rosette of six to eight claw-like leaves featuring a
+              light-absorbing, matte-black surface laced with glowing silver
+              vein networks that mirror shattered constellations. Rather than
+              drifting off, a swarm of tiny purple void spores holds a stable
+              gravitational orbit around the plant's crown. At night,
+              microscopic spore movements through its vascular tissues generate
+              soft acoustic vibrations that resemble whispers in lost
+              languages—or, after prolonged listening, the familiar voices of
+              loved ones.
+            </p>
+
+            <h3>Care & Containment Directives:</h3>
+            <ul>
+              <li>
+                <strong>Placement:</strong> The tiny purple spores orbiting its
+                leaves are held in place by localized micro-gravity. Do not use
+                electric desk fans nearby, as disrupting the orbit causes the
+                spores to disperse into the room.
+              </li>
+              <li>
+                <strong>Feeding:</strong> Feeds on ambient emotions. Each
+                seedling has its own preferred emotion and will actively
+                manipulate the minds of those in its vicinity to harvest it. For
+                example, a specimen favoring sorrow may induce sudden,
+                unexplainable weeping. Never place an infant near a seedling, as
+                they lack the emotional maturity to survive the plant's psychic
+                demands.
+              </li>
+              <li>
+                <strong>Rule:</strong> Do not attempt to decipher the whisper
+                patterns. If the plant begins addressing you by name using a
+                voice you recognize, step back and cover the pot with an opaque
+                cloth for twenty minutes.
+              </li>
+            </ul>
+
+            <p class="warning-text">
+              <strong>Warning:</strong> When startled or brushed against
+              roughly, the seedling releases a concentrated puff of lavender
+              memory spores. Inhaling these spores causes instant, short-term
+              amnesia—leaving intruders standing in the middle of the room
+              entirely unsure of why they walked in there.
+            </p>
+          </div>
+        </div>
+
+        <!-- restricted section -->
+        <div id="plant-9452" class="monster-detail-card restricted-specimen">
+          <div class="restricted-stamp">CLASSIFIED / NOT FOR PUBLIC SALE</div>
+
+          <div class="image-container">
+            <img
+              src="void-tyrant.jpg"
+              alt="Void Tyrant (Voidheart Eclipse Blossom)"
+            />
+            <span class="id-badge danger-badge">ID: #9452-VOID</span>
+          </div>
+
+          <div class="monster-info">
+            <h2>VOID TYRANT</h2>
+            <h3 class="sub-title">(Voidheart Eclipse Blossom)</h3>
+            <p class="scientific-name">
+              <em
+                >Class: Parasitic-Aether / Origin: Primary Void Rift (Sub-Sector
+                0)</em
+              >
+            </p>
+
+            <p>
+              An ancient parasitic anomaly that roots in pure human despair
+              rather than organic soil. Its massive petals are woven from
+              living, liquid darkness. At its core hovers a miniature total
+              eclipse—the <strong>Voidheart</strong>.
+            </p>
+
+            <h3>Psychological & Spatial Anomalies:</h3>
+            <ul>
+              <li>
+                <strong>Cognitive Echoes:</strong> Observers staring into the
+                Voidheart report seeing dark silhouettes hanging from its lower
+                tendrils. These are not corpses, but extracted psychic
+                echoes—stolen fragments of possible futures siphoned directly
+                from nearby conscious minds.
+              </li>
+              <li>
+                <strong>Defensive Pulse:</strong> When provoked, the blossom
+                discharges a silent wave of localized dark energy that
+                temporarily erases ambient light, acoustics, and directional
+                orientation within a 50-meter radius.
+              </li>
+              <li>
+                <strong>Nutritional Intake:</strong> Demonstrates zero interest
+                in flesh or water; it sustains its cellular grid by absorbing
+                ambient hope, optimism, and mental resilience.
+              </li>
+            </ul>
+
+            <div class="containment-warning">
+              <h4>⚠️ GOVERNMENT / RESEARCH PROTOCOL ONLY</h4>
+              <p>
+                <strong>Purchase Requirements:</strong> Direct authorization
+                from Defense Department Level 5 Clearance or Bio-Containment
+                Oversight.
+              </p>
+              <p>
+                <strong>Warning Sign:</strong> Immediate evacuation is mandatory
+                if a black sun appears in sky conditions where none should
+                exist.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="monster-detail-card">
+          <div class="auth-panel">
+            <h2 class="auth-title">The Forbidden Compendium</h2>
+            <p class="auth-subtitle">
+              Restricted Access // Level 5 Clearance Required
+            </p>
+
+            <div class="auth-inputs-row">
+              <div class="form-group">
+                <label for="clearance-key"
+                  >Authorization Credentials Required:</label
+                >
+                <input
+                  type="text"
+                  id="clearance-key"
+                  placeholder="Format: VT-XXXX-XXXX-CLR"
+                  class="sig-input"
+                  autocomplete="off"
+                  required
+                />
+                <small class="field-hint">
+                  <em
+                    >[Gov Tier // Unrestricted Access: Grants full authorization
+                    for high-threat cosmic and Void strains.]</em
+                  >
+                </small>
+              </div>
+
+              <div class="form-group">
+                <label for="clearance-number">Special Clearing Number:</label>
+                <input
+                  type="text"
+                  id="clearance-number"
+                  placeholder="Format: SC-XXXX-XXXX-CORP"
+                  class="sig-input"
+                  required
+                />
+                <small class="field-hint">
+                  <em
+                    >[Corporate Tier // Limited Access: Restricted to standard
+                    botanical/elemental strains under direct supervision.]</em
+                  >
+                </small>
+              </div>
+            </div>
+
+            <!-- Bottom section containing button and terminal output -->
+            <div class="auth-action-area">
+              <button type="button" id="authCompendiumBtn" class="auth-btn">
+                <span class="lock-icon">🔒</span> Authenticate Credentials //
+                Open Compendium
+              </button>
+              <div id="authTerminalOutput" class="auth-output"></div>
+            </div>
+          </div>
+        </div>
+
+        <!--footer-->
+        <footer class="site-footer">
+          <div class="footer-content">
+            <div class="footer-brand">
+              <p>
+                Haunted house plants, grown with love (and a little dark magic).
+              </p>
+            </div>
+          </div>
+          <p class="footer-bottom">
+            🎃 © 2026 Spooky Roots. All roots reserved.
+          </p>
+        </footer>
+      </main>
+    </div>
+
+    <!-- Retro Windows Email Modal Popup -->
+    <div id="emailModalOverlay" class="win95-overlay" hidden>
+      <div
+        id="emailModal"
+        class="win95-modal"
+        role="dialog"
+        aria-labelledby="emailModalTitle"
+        aria-modal="true"
+      >
+        <div class="win95-header">
+          <span id="emailModalTitle" class="win95-title"
+            >✉️ New Message - Spooky Roots Mail</span
+          >
+          <button
+            type="button"
+            id="closeEmailModal"
+            class="win95-close-btn"
+            aria-label="Close"
+          >
+            X
+          </button>
+        </div>
+        <form id="emailForm" class="win95-body">
+          <label>To: support@spookyroots.com</label>
+          <label class="visually-hidden" for="senderEmail">Your email</label>
+          <input
+            id="senderEmail"
+            type="email"
+            placeholder="Your Email Address..."
+            required
+          />
+          <label class="visually-hidden" for="emailMessage">Message</label>
+          <textarea
+            id="emailMessage"
+            rows="5"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+          <p id="emailStatus" class="win95-status" hidden></p>
+          <button type="submit" class="win95-send-btn">Send Mail</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <button type="button" id="backToTopBtn" title="Return to Top Phase">
+      ▲ TOP
+    </button>
+  </body>
+</html>

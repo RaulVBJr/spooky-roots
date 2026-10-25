@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haunted House Plant Nursery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- HTML Head -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- BODY -->
+  <body>
+    <div class="page-layout">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-logo">🧛‍♂️ Spooky Roots</div>
+        <nav class="sidebar-nav">
+          <a href="index.html" class="active">Home</a>
+          <a href="care.html">Codex</a>
+          <a href="waiver.html">Claim Your Cutting</a>
+          <a href="monsters.html">Nursery</a>
+        </nav>
+        <br />
+        <div class="social">
+          <a
+            href="https://www.instagram.com/"
+            aria-label="Instagram"
+            target="_blank"
+            >📸</a
+          >
+          <a href="https://x.com/" aria-label="Twitter" target="_blank">𝕏</a>
+          <a href="#" id="openEmailModal">
+            <span class="social-icon">✉️</span>
+          </a>
+        </div>
+
+        <!-- Sorting Dropdown -->
+
+        <select id="sortSelect" class="sig-input">
+          <option value="name-asc">Name: A to Z</option>
+          <option value="name-desc">Name: Z to A</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+
+        <div class="monster-sprite"></div>
+
+        <div class="nursery-hours">
+          <h4>📜 Nursery Hours</h4>
+          <p>
+            Open from when the first twilight hits until the first rooster
+            crows.
+          </p>
+          <p>Always open under a full moon 🌕 or eclipse.</p>
+          <p class="closed-note">Closed when the spirits demand it.</p>
+        </div>
+      </aside>
+
+      <!-- MAIN COLUMN -->
+      <main class="main-content">
+        <header class="main-header">
+          <div class="ghost-parade" id="ghostParade"></div>
+        </header>
+
+        <!-- TITLE -->
+
+        <section class="hero">
+          <h1>Plants That Bite Back</h1>
+          <p>Welcome to the world's only haunted house plant nursery.</p>
+        </section>
+
+        <!-- PLANTGRID -->
+
+        <section class="grid-container" id="plantGrid"></section>
+
+        <!-- FOOTER -->
+
+        <footer class="site-footer">
+          <div class="footer-content">
+            <div class="footer-brand">
+              <p>
+                Haunted house plants, grown with love (and a little dark magic).
+              </p>
+            </div>
+          </div>
+          <p class="footer-bottom">
+            🎃 © 2026 Spooky Roots. All roots reserved.
+          </p>
+        </footer>
+      </main>
+    </div>
+    <!-- Retro Windows Email Modal Popup -->
+    <div id="emailModalOverlay" class="win95-overlay" hidden>
+      <div
+        id="emailModal"
+        class="win95-modal"
+        role="dialog"
+        aria-labelledby="emailModalTitle"
+        aria-modal="true"
+      >
+        <div class="win95-header">
+          <span id="emailModalTitle" class="win95-title"
+            >✉️ New Message - Spooky Roots Mail</span
+          >
+          <button
+            type="button"
+            id="closeEmailModal"
+            class="win95-close-btn"
+            aria-label="Close"
+          >
+            X
+          </button>
+        </div>
+        <form id="emailForm" class="win95-body">
+          <label>To: support@spookyroots.com</label>
+          <label class="visually-hidden" for="senderEmail">Your email</label>
+          <input
+            id="senderEmail"
+            type="email"
+            placeholder="Your Email Address..."
+            required
+          />
+          <label class="visually-hidden" for="emailMessage">Message</label>
+          <textarea
+            id="emailMessage"
+            rows="5"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+          <p id="emailStatus" class="win95-status" hidden></p>
+          <button type="submit" class="win95-send-btn">Send Mail</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

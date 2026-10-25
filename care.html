@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codex - Haunted Plants</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page-layout">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <div class="sidebar-logo">🧛‍♂️ Spooky Roots</div>
+        <nav class="sidebar-nav">
+          <a href="index.html">Home</a>
+          <a href="care.html" class="active">Codex</a>
+          <a href="waiver.html">Claim Your Cutting</a>
+          <a href="monsters.html">Nursery</a>
+        </nav>
+        <br />
+        <div class="social">
+          <a
+            href="https://www.instagram.com/"
+            aria-label="Instagram"
+            target="_blank"
+            >📸</a
+          >
+          <a href="https://x.com/" aria-label="Twitter" target="_blank">𝕏</a>
+          <a href="#" id="openEmailModal">
+            <span class="social-icon">✉️</span>
+          </a>
+        </div>
+
+        <div class="monster-sprite"></div>
+
+        <div class="nursery-hours">
+          <h4>📜 Nursery Hours</h4>
+          <p>
+            Open from when the first twilight hits until the first rooster
+            crows.
+          </p>
+          <p>Always open under a full moon 🌕 or eclipse.</p>
+          <p class="closed-note">Closed when the spirits demand it.</p>
+        </div>
+      </aside>
+
+      <main class="main-content">
+        <header class="main-header">
+          <div class="ghost-parade" id="ghostParade"></div>
+        </header>
+        <div class="facility-section">
+          <section class="hero">
+            <h1>How to Keep Your Monsters Alive</h1>
+            <p>(And how to keep yourself safe while doing it.)</p>
+          </section>
+
+          <div class="facility-section waiver-clause">
+            <h2>FACILITY DIRECTIVE: [ ! ] IMPORTANT</h2>
+            <p>(Mandatory Visitor &amp; Safety Protocols)</p>
+            <p class="scientific-name">
+              <em>Document ID: SEC-DOC-1094-REV4 / Sector: Public Grounds</em>
+            </p>
+
+            <div>
+              <h3>Phase 1: Ingress &amp; Identity Verification</h3>
+              <p>
+                Upon stepping past the primary airlock, proceed directly to the
+                Security Check-in Desk. Present your government ID and release
+                waiver, and answer all verification inquiries truthfully
+                (including country of origin, target calendar year, and home
+                address).
+              </p>
+
+              <h3>
+                Phase 2: Biometric Synchronization &amp; Temporal Anomalies
+              </h3>
+              <p>
+                You will be issued an
+                <strong>Electronic Biometric Wristband</strong> upon entry. Due
+                to our facility's non-linear spatial matrix and exotic specimen
+                containment, localized temporal anomalies (time loops,
+                desynchronization, and localized history shifts) occur regularly
+                across all sectors.
+              </p>
+
+              <div class="care-instruction">
+                <h4>⌚ Wristband Distress Protocols</h4>
+                <ul>
+                  <li>
+                    <strong>The Panic Button:</strong> Should you experience
+                    sudden age regression, memory overlapping, or observe
+                    alternate-timeline iterations of yourself, immediately press
+                    the emergency distress button located on your wristband.
+                  </li>
+                  <li>
+                    <strong>Security Response Time:</strong> A Tactical Response
+                    Team will be dispatched to your coordinates within 45
+                    seconds to isolate the anomaly and re-establish your
+                    baseline temporal anchor.
+                  </li>
+                  <li>
+                    <strong>DO NOT Remove the Wristband:</strong> No facility
+                    representative will ever ask you to unbuckle your wristband
+                    inside display sectors. If an entity posing as staff
+                    requests your wristband, press the button immediately and do
+                    not engage.
+                  </li>
+                </ul>
+              </div>
+
+              <h3>Phase 3: Spatial &amp; Temporal Layout</h3>
+              <p>
+                The facility is subject to non-Euclidean anomalies. Note that we
+                do not have traditional hallways between sectors. At present,
+                <strong>only the Plant Section is open to the public</strong>
+                (the Esoteric Section requires invitation clearance). Do not
+                interfere with security personnel if you witness guest custody
+                interventions.
+              </p>
+
+              <h3>Phase 4: Self-Encounter Threat Index (Panic Protocol)</h3>
+              <table class="win95-table">
+                <thead>
+                  <tr>
+                    <th>Level &amp; Threat</th>
+                    <th>Entity Type</th>
+                    <th>Hazard Description</th>
+                    <th>Action Required</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="threat-level-0">
+                    <td><strong>Level 0</strong> (Low)</td>
+                    <td>Standard Self (Material Match)</td>
+                    <td>
+                      A duplicate of yourself from another time/place. If both
+                      of you are composed of the same material, you cannot
+                      coexist.
+                    </td>
+                    <td>
+                      <span class="caution-tag">CAUTION!</span> Do not make
+                      physical contact. Contact may result in total erasure.
+                    </td>
+                  </tr>
+                  <tr class="threat-level-1">
+                    <td><strong>Level 1</strong> (Low)</td>
+                    <td>Standard Self (Doppelgänger)</td>
+                    <td>A deceptive entity mimicking your exact appearance.</td>
+                    <td>
+                      <strong>PRESS BUTTON.</strong> Do not approach. Security
+                      cannot differentiate between you two.
+                    </td>
+                  </tr>
+                  <tr class="threat-level-2">
+                    <td><strong>Level 2</strong> (Medium)</td>
+                    <td>Hollow Self</td>
+                    <td>
+                      An emaciated version of yourself with a face perpetually
+                      obscured by shadow.
+                    </td>
+                    <td>
+                      <strong>PRESS BUTTON &amp; HOLD POSITION.</strong>
+                      Maintain a safe distance until security arrives.
+                    </td>
+                  </tr>
+                  <tr class="threat-level-3">
+                    <td><strong>Level 3</strong> (Imminent)</td>
+                    <td>Radiant Self</td>
+                    <td>
+                      A blindingly bright, glowing version of yourself that is
+                      painful to look at directly.
+                    </td>
+                    <td>
+                      <span class="danger-tag">DO NOT WAIT FOR SECURITY.</span>
+                      Evacuate immediately. <em>Sea Tyrant</em> (Abyssheart
+                      Siren Bloom) has broken containment.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h3>Phase 5: Plant Nursery &amp; Public Sector Guidelines</h3>
+              <ul>
+                <li>
+                  <strong>Emotional Control:</strong> Maintain emotional
+                  stability—certain flora react empathically to fear or panic
+                  spikes.
+                </li>
+                <li>
+                  <strong>Catalog Restrictions:</strong> Only displayed public
+                  flora are for sale.
+                </li>
+                <li>
+                  <strong>Phantom Strain Phasing:</strong>
+                  <em>Phantom Strain</em> plants may phase through walls,
+                  exposing exterior void gaps.
+                  <strong>Refrain from looking into breaches</strong> to avoid
+                  mental distress.
+                </li>
+                <li>
+                  <strong>Delivery &amp; No-Gift Policy:</strong> Purchased
+                  flora are dispatched to your home address. Staff will never
+                  hand out gifts or samples—do not accept items from anyone.
+                </li>
+                <li>
+                  <strong>Bistro Rules:</strong> Food from the Bistro must not
+                  be carried into display zones or off-site. Violators face
+                  heavy fines.
+                </li>
+              </ul>
+
+              <h3>Phase 6: Egress &amp; Post-Purchase Liability</h3>
+              <p>
+                When leaving, return to security check-in and exit strictly
+                through the gate designated by your guard. Buyers assume total
+                liability upon dispatch. Flora cannot be gifted or resold.
+                Returns incur containment fees with zero refunds. In the event
+                of buyer mortality,
+                <strong>specimens may not be passed to heirs</strong> and will
+                be repossessed.
+              </p>
+
+              <p class="facility-notice">
+                <strong>⚠️ NOTICE:</strong> All specimens listed are for
+                <strong>in-person acquisition only</strong> at Spooky Roots
+                containment facilities. Physical presence, signed waiver, and
+                biometric clearance are mandatory prior to asset release. Direct
+                delivery is restricted to authorized
+                <strong>Asset Protection – Courier Unit (AP-CU)</strong> only.
+                Final approval remains at the sole discretion of facility
+                oversight.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- PLANT-->
+        <div class="facility-section">
+          <h3>General Plant Handling &amp; Maintenance Guidelines</h3>
+          <p class="warning-banner">
+            <strong>CRITICAL RULE:</strong> Do not feed any of our specimens
+            after midnight.
+          </p>
+
+          <div class="care-instruction">
+            <h4>1. Lighting Conditions</h4>
+            <p>
+              Most of our specimens despise standard sunlight. Be sure to
+              carefully verify what spectrum of light your plant requires. We
+              sell specialized illumination bulbs in every frequency (including
+              Void and Anima radiation).
+            </p>
+            <p>
+              <em>Astrological Factor:</em> Double-check if upcoming lunar
+              eclipses, solar eclipses, or planetary alignments affect your
+              specimen. Certain flora experience severe mood alterations during
+              specific zodiac transitions.
+            </p>
+          </div>
+
+          <div class="care-instruction">
+            <h4>2. The Watering Ritual</h4>
+            <p>
+              For specimens that absorb liquid through standard root systems,
+              you must speak the required incantations directly into the soil in
+              a gentle, soothing voice. If you hear ominous whispers responding
+              to you while watering, immediately check the water temperature or
+              verify if you mispronounced a word in the ritual.
+            </p>
+          </div>
+
+          <div class="care-instruction">
+            <h4>3. Pruning &amp; Trimming Safety</h4>
+            <p>
+              Always wear heavy-duty leather protection. If a plant snarls,
+              snaps, or growls at your shears, back away slowly and attempt
+              pruning again tomorrow.
+              <strong>Never show aggression or issue threats to flora.</strong>
+              They retain long-term memories and will hold severe grudges.
+            </p>
+            <p>
+              <em>Need Assistance?</em> If pruning becomes impossible, email
+              facility services and we will dispatch a certified horticulturist
+              expeditiously.
+            </p>
+          </div>
+
+          <div class="facility-section strain-warnings">
+            <h3>🚨 Strain-Specific Operational Warnings</h3>
+
+            <p class="warning-banner">
+              <strong>FAMILY &amp; PET ADVISORY:</strong> Our specimens are not
+              suitable for traditional households. Keep
+              <em>Parasitic-Sanguine</em> strains isolated from living quarters
+              and pets (including fish and insects).
+            </p>
+
+            <div class="specimen-warning-list">
+              <h4>Individual Specimen Regulations</h4>
+              <ul>
+                <li>
+                  <strong>Banshee Bonsai:</strong> Do not tap on the glass of
+                  its containment tank under any circumstances. Vibrations are
+                  registered as direct acts of aggression.
+                </li>
+                <li>
+                  <strong>Zombie Succulent:</strong> Do not throw or plant this
+                  specimen in a graveyard to see what happens. Violators face
+                  astronomical municipal fines and complete financial liability
+                  for cleanup costs.
+                </li>
+                <li>
+                  <strong>Void Tendril:</strong> Do not ingest the glowing orbs
+                  produced by the tendrils.
+                </li>
+                <li>
+                  <strong>Luna Specimen:</strong> The visions you experience
+                  near this plant are <em>not</em> hallucinations. You are
+                  forming an active soul-tether with an alternate version of
+                  yourself, which will cause both of you to slowly lose your
+                  sanity.
+                </li>
+                <li>
+                  <strong>Violet Specimen:</strong> The visions you experience
+                  are <em>not</em> hallucinations. You are establishing a
+                  soul-tether with a past or future version of yourself,
+                  resulting in a fractured mind.
+                </li>
+                <li>
+                  <strong>Screaming Mandrake Root:</strong> Fictional handling
+                  protocols offer zero protection. Follow official facility
+                  guidelines only.
+                </li>
+                <li>
+                  <strong>Corpse-Root Claws:</strong> Do not use for pest
+                  control. Escaped specimens will nest inside your home's walls.
+                </li>
+              </ul>
+            </div>
+
+            <h4>Botanical Strain Directives</h4>
+            <ul>
+              <li>
+                <strong>Quantum-Cryptid Strain:</strong> Prevent structural
+                contact. Specimens may phase out of reality, taking walls or
+                floors with them.
+              </li>
+              <li>
+                <strong>Ocular-Flora Strains:</strong> Keep away from séances.
+                Optical contact is bidirectional—if it sees an entity, the
+                entity sees you.
+              </li>
+              <li>
+                <strong>Cryo-Botanical / Elemental Strains:</strong> Do not
+                touch leaves for cooling. Heat triggers severe sub-zero drops
+                that fuse foliage to skin.
+              </li>
+              <li>
+                <strong>Acoustic-Resonant Strain:</strong> Do not use as hearing
+                aids. Whispers inject incoherent, sanity-draining blueprints
+                from foreign realities.
+              </li>
+              <li>
+                <strong>Widow’s Weave Vines:</strong> Do not use as instrument
+                strings. The resulting frequency induces acute, overwhelming
+                melancholy.
+              </li>
+              <li>
+                <strong>Chime-Choke Orchid:</strong> Do not use for meditation.
+                High risk of temporal slippage and multi-hour catatonic states.
+              </li>
+              <li>
+                <strong>Cosmic Strain:</strong> Teleportation shadows are
+                strictly non-Euclidean. Do not use them for trash disposal.
+              </li>
+              <li>
+                <strong>Anima Strain:</strong> Apparent "healing" comes at a
+                steep, variable cost to the user's physical or spiritual
+                well-being.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="site-footer">
+          <div class="footer-content">
+            <div class="footer-brand">
+              <p>
+                Haunted house plants, grown with love (and a little dark magic).
+              </p>
+            </div>
+          </div>
+          <p class="footer-bottom">
+            🎃 © 2026 Spooky Roots. All roots reserved.
+          </p>
+        </footer>
+      </main>
+    </div>
+
+    <!-- Retro Windows Email Modal Popup -->
+    <div id="emailModalOverlay" class="win95-overlay" hidden>
+      <div
+        id="emailModal"
+        class="win95-modal"
+        role="dialog"
+        aria-labelledby="emailModalTitle"
+        aria-modal="true"
+      >
+        <div class="win95-header">
+          <span id="emailModalTitle" class="win95-title"
+            >✉️ New Message - Spooky Roots Mail</span
+          >
+          <button
+            type="button"
+            id="closeEmailModal"
+            class="win95-close-btn"
+            aria-label="Close"
+          >
+            X
+          </button>
+        </div>
+        <form id="emailForm" class="win95-body">
+          <label>To: support@spookyroots.com</label>
+          <label class="visually-hidden" for="senderEmail">Your email</label>
+          <input
+            id="senderEmail"
+            type="email"
+            placeholder="Your Email Address..."
+            required
+          />
+          <label class="visually-hidden" for="emailMessage">Message</label>
+          <textarea
+            id="emailMessage"
+            rows="5"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+          <p id="emailStatus" class="win95-status" hidden></p>
+          <button type="submit" class="win95-send-btn">Send Mail</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <button type="button" id="backToTopBtn" title="Return to Top Phase">
+      ▲ TOP
+    </button>
+  </body>
+</html>

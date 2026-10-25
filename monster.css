@@ -1,0 +1,365 @@
+/* Row Layout: Image left, info right */
+.gallery-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    align-items: center;
+    background-color: var(--bg-card);
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--ghostly-purple);
+}
+
+/* Image Container styling */
+.monster-image-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/3; /* Keeps all images matching in size */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.monster-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crops image cleanly inside the box without stretching */
+    display: block;
+}
+
+/* Specimen Floating ID tag */
+.specimen-tag {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    background-color: rgba(13, 11, 17, 0.85);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-family: monospace;
+    color: var(--neon-green);
+    border: 1px solid var(--neon-green);
+}
+
+/* Monster text block inside row */
+.monster-info h2 {
+    font-family: 'Creepster', cursive;
+    color: var(--neon-green);
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+}
+
+.monster-info p {
+    color: var(--text-light);
+    line-height: 1.6;
+}
+.gallery-item:nth-child(even) .monster-image-wrapper {
+    order: 2;
+}
+/* new code */
+.monster-detail-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  align-items: center;
+  background-color: var(--bg-card);
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid var(--ghostly-purple);
+  margin-bottom: 40px;
+}
+
+.image-container {
+  position: relative;          /* required for the specimen-tag */
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #0a0a0a;   /* subtle frame behind the image */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;                /* keeps full image, no crop */
+  display: block;
+  object-fit: contain;         /* shows the whole picture */
+}
+
+/* tag still works the same */
+.image-container .specimen-tag {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+}
+
+.scientific-name {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.monster-info ul {
+  margin: 1rem 0;
+  padding-left: 20px;
+  color: #c0c0c0;
+}
+
+.monster-info li {
+  margin-bottom: 0.5rem;
+}
+
+.warning-text {
+  color: #ff3333; /* A sharp warning red that pops against the dark background */
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+/*-- restricted section --*/
+
+.restricted-specimen {
+  border: 2px solid #ff0000 !important; /* Severe alert red border */
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+  position: relative;
+}
+
+.restricted-stamp {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: #ff0000;
+  color: #000;
+  font-weight: bold;
+  padding: 4px 10px;
+  letter-spacing: 2px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.danger-badge {
+  background: #ff0000 !important;
+  color: #ffffff !important;
+}
+
+.containment-warning {
+  margin-top: 1.5rem;
+  padding: 12px;
+  border: 1px dashed #ff0000;
+  background: rgba(255, 0, 0, 0.08);
+  color: #ff8888;
+}
+
+/* back to top */
+
+#backToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  display: none; /* Hidden by default until scrolled */
+  padding: 10px 16px;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  color: #7df9ff;
+  background-color: rgba(10, 10, 15, 0.85);
+  border: 1px solid #7df9ff;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(125, 249, 255, 0.2);
+  transition: opacity 0.3s ease, transform 0.2s ease, background-color 0.2s ease;
+}
+
+#backToTopBtn:hover {
+  background-color: #7df9ff;
+  color: #0a0a0f;
+  box-shadow: 0 0 15px rgba(125, 249, 255, 0.6);
+  transform: translateY(-3px);
+}
+
+/* authButton */
+
+.auth-action-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* or center */
+  gap: 0.5rem;
+}
+
+.auth-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(180deg, #2a0505 0%, #120000 100%);
+  color: #ff6b6b;
+  border: 1px solid #ff3333;
+  padding: 12px 20px;
+  font-family: "Courier New", monospace;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+  box-shadow:
+  0 0 0 1px rgba(255, 50, 50, 0.25),
+  0 0 12px rgba(255, 0, 0, 0.25),
+  inset 0 1px 0 rgba(255, 120, 120, 0.15);
+  transition: all 0.2s ease;
+}
+
+.auth-btn:hover {
+  color: #fff;
+  background: linear-gradient(180deg, #4a0a0a 0%, #1a0000 100%);
+  border-color: #ff5555;
+  box-shadow:
+  0 0 0 1px rgba(255, 80, 80, 0.4),
+  0 0 20px rgba(255, 0, 0, 0.45),
+  inset 0 1px 0 rgba(255, 150, 150, 0.25);
+  text-shadow: 0 0 8px rgba(255, 80, 80, 0.8);
+}
+
+.auth-output {
+  margin-top: 12px;
+  padding: 8px 10px;
+  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+  color: #ff4444;
+  background: rgba(40, 0, 0, 0.45);
+  border-left: 3px solid #ff2222;
+  min-height: 1.2em;
+}
+
+.auth-btn:active {
+  transform: translateY(1px);
+  box-shadow:
+    0 0 8px rgba(255, 0, 0, 0.3),
+    inset 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.lock-icon {
+  font-size: 1rem;
+  filter: drop-shadow(0 0 4px rgba(255, 80, 80, 0.8));
+}
+
+.auth-btn::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ff3333;
+  box-shadow: 0 0 6px #ff0000;
+  animation: authPulse 1.4s ease-in-out infinite;
+}
+
+@keyframes authPulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+/* hint */
+.field-hint {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.75rem;
+  color: #888;
+  letter-spacing: 0.5px;
+}
+
+/* input */
+.auth-panel {
+  margin: 1.5rem auto 0 auto; /* Centered horizontally inside card */
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(255, 77, 77, 0.4);
+  display: flex;
+  flex-direction: column;   /* Stacks inputs row on top, button on bottom */
+  align-items: center;      /* Centers all child blocks */
+  gap: 1.2rem;
+  width: 100%;
+  max-width: 680px;         /* Gives inputs enough room to sit comfortably */
+}
+
+.auth-panel .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.auth-panel label {
+  color: #ff8888;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.auth-panel .sig-input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.auth-panel .field-hint {
+  color: #888;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.auth-action-area {
+  margin-top: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.auth-inputs-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.auth-inputs-row .form-group {
+  flex: 1;                 /* Ensures both inputs share equal width */
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.auth-panel label {
+  color: #ff8888;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.auth-panel .sig-input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.auth-panel .field-hint {
+  color: #888;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.auth-action-area {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* Centers button and error banner */
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+}
+
+.auth-output {
+  margin-top: 4px;
+  padding: 8px 14px;
+  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+  color: #ff4444;
+  background: rgba(40, 0, 0, 0.45);
+  border-left: 3px solid #ff2222;
+  min-height: 1.2em;
+  text-align: center;      /* Keeps terminal output aligned nicely under button */
+  max-width: 90%;
+}
