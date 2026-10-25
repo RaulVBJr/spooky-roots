@@ -885,68 +885,90 @@ html {
 /* 📱 Mobile & Tablet Responsive Override (< 800px) */
 @media (max-width: 800px) {
   .page-layout {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .sidebar {
-        width: 100%;
-        max-width: 100%;
-        position: relative;
-        padding: 12px 16px;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        column-gap: 16px;
-        row-gap: 10px;
-        border-right: none;
-        border-bottom: 1px solid var(--ghostly-purple);
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    padding: 12px 14px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-right: none;
+    border-bottom: 1px solid var(--ghostly-purple);
   }
+
   .sidebar-logo {
-        margin-bottom: 0;
-        font-size: 1.2rem;
+    margin: 0;
+    font-size: 1.15rem;
   }
 
+  /* Nav as a tight wrap row */
   .sidebar-nav {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
-        gap: 8px 14px;
-        font-size: 1rem;
-  }
-  .sidebar-nav a {
-        padding: 4px 8px;
-        border-radius: 4px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    font-size: 0.9rem;
   }
 
-  .sidebar .sig-input,
-    .sidebar select {
-        width: 100%;
-        margin: 4px 0 0;
-        order: 10; /* push below the nav row */
+  .sidebar-nav a {
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid transparent;
   }
-   
+
+  .sidebar-nav a.active {
+    border-color: var(--neon-green);
+    background: rgba(57, 255, 20, 0.08);
+  }
+
+  .social {
+    gap: 12px;
+  }
+
+  /* Sort: full width but smaller */
+  .sidebar .sig-input,
+  .sidebar select {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  /* Biggest win: hide hours on small screens */
+  .nursery-hours {
+    display: none;
+  }
+
   .monster-sprite {
     display: none;
   }
 
-  .nursery-hours {
-        order: 20;
-        max-width: none;
-        width: 100%;
-        margin: 8px 0 0;
-  }
-
   .main-content {
-    padding: 12px 16px 40px;
-  }
-
-  .plant-card {
-    flex: 0 0 240px;
+    padding: 10px 12px 32px;
   }
 
   .main-header {
-    padding: 12px;
+    padding: 8px 10px;
+  }
+
+  .ghost-parade {
+    font-size: 1.4rem; /* fewer / smaller ghosts */
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+    line-height: 1.15;
+    padding: 0 4px;
+  }
+
+  .hero p {
+    font-size: 0.85rem;
+  }
+
+  .plant-card {
+    flex: 0 0 220px;
   }
 }
 
